@@ -86,16 +86,17 @@ color: white;
         border-radius: 8px;
     }
     .nav-icon{
-         margin-top: 0.5%;
-        padding: 1%;
+       margin-top: 0.5%;
+        padding: 0.5%;
         display: flex;
         justify-content: space-between;
         align-items: center;
         flex-wrap: wrap;
         align-items: center;
         width: 18%;
-        height: 1em;
+        height: 0.5em;
     }
+    
     .nav-icon a{
      color: #4B4B4B;
     }
@@ -103,6 +104,7 @@ color: white;
         font-size: 40px;
         align-items: center;
     }
+    
     .btn{
       color: white;
         border: 1px solid skyblue;

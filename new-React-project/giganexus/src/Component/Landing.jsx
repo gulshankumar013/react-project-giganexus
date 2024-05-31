@@ -5,6 +5,7 @@ import 'react-slideshow-image/dist/styles.css'
 import { FaIndianRupeeSign } from "react-icons/fa6";
 import { CiHeart } from "react-icons/ci";
 import Footer from "./Footer";
+import { Link } from "react-router-dom";
 
 
 
@@ -34,7 +35,7 @@ const slideImages = [
 ];
 
 
-const Landing = ({ product, trending, brand, addToCart }) => {
+const Landing = ({ product, trending, brand, addToCart, addToWishlist }) => {
   const [popupData, setPopupData] = useState(null);
   const magnifierRef = useRef(null);
 
@@ -159,7 +160,7 @@ const Landing = ({ product, trending, brand, addToCart }) => {
                 <div className="child4-b">{productItem.price}</div>
               </div>
               <div className="child4-c"><button onClick={(e) => { e.stopPropagation(); addToCart(productItem); }}>Add to Cart</button></div>
-              <div className="card-box5"><a style={{ color: '#0075FF' }} href=""><CiHeart style={{ fontSize: '30px' }} /></a></div>
+              <div className="card-box5"><Link style={{ color: '#0075FF' }} href=""><CiHeart style={{ fontSize: '30px' }} onClick={()=>{addToWishlist(productItem)}} /></Link></div>
             </div>
           ))}
         </div>
@@ -191,7 +192,7 @@ const Landing = ({ product, trending, brand, addToCart }) => {
             <div onClick={() => toggle(productItem)} className="child1" key={productIndex}>
               <div className="card-box1"><img src={productItem.url} alt="" /></div>
               <div className="card-box2">{productItem.name}</div>
-              <div className="card-box3">{productItem.description}</div>
+              <div className="card-box3">{productItem.discount}</div>
               <div className="card-box4">
                 <div className="child4-a"></div>
                 <div className="child4-b">{productItem.price}</div>

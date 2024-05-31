@@ -27,8 +27,8 @@ const Nav = ({count} ) => {
                 </div>
                 <div className='nav-icon'>
                     <NavLink to={'/cart'}className={(e)=>{return e.isActive?"blue":" "}}><IoCartOutline className='nav-icons'/> <sup>{count} </sup></NavLink>
-                    <a href=""><PiUser className='nav-icons'/></a>
-                   <a href=""><IoIosHeartEmpty className='nav-icons'/></a>
+                    <NavLink to={'/profile'}><PiUser className='nav-icons'/></NavLink>
+                   <NavLink to={'/wishlist'}><IoIosHeartEmpty className='nav-icons'/></NavLink>
                 </div>
         </nav>
         
