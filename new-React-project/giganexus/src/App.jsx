@@ -14,6 +14,17 @@ import Customize3 from './Component/Customize3';
 import Cart from './Component/Cart';
 import Profile from './Component/Profile';
 import Wishlist from './Component/Wishlist';
+import Gaming from './Component/Gaming';
+import Workstation from './Component/Workstation';
+import Vr from './Component/Vr';
+import GamingKeyboard from './Component/GamingKeyboard';
+import GamingMouse from './Component/GamingMouse';
+import GamingConsol from './Component/GamingConsol';
+import Payment from './Component/Pyment';
+
+
+
+
 
 
 
@@ -195,7 +206,7 @@ const App = () => {
   
     {
       path:"/",
-      element: <Home count={cart.length}/>,
+      element: <Home count={cart.length} countwish={wishlist.length}/>,
       children:[
         {
           path:"/",
@@ -230,7 +241,31 @@ const App = () => {
         },
         {
           path:"/categories",
-          element: <Categories/>
+          element: <Categories/>  
+        },
+        {
+            path:'/categories/gaming_controller',
+            element:<Gaming/>
+        },
+        {
+          path: '/categories/workstation_monitor',
+          element: <Workstation/> // Define the component to render for this path
+        },
+        {
+          path: '/categories/vr_controller',
+          element: <Vr/> // Define the component to render for this path
+        },
+        {
+          path: '/categories/gaming_keyboard',
+          element: <GamingKeyboard/> // Define the component to render for this path
+        },
+        {
+          path: '/categories/gaming_mouse',
+          element: <GamingMouse/> // Define the component to render for this path
+        },
+        {
+          path: '/categories/gaming_console',
+          element: <GamingConsol/> // Define the component to render for this path
         },
        
         {
@@ -251,7 +286,11 @@ const App = () => {
         },
         {
           path:"/wishlist",
-          element:<Wishlist wishlist={wishlist} setWishlist={setWishlist}/>
+          element:<Wishlist wishlist={wishlist} setWishlist={setWishlist} addToCart={addToCart} />
+        },
+        {
+          path:"/payment",
+          element:<Payment/>
         }
 
       ]

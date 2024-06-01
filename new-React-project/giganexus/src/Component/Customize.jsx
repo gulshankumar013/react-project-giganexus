@@ -9,10 +9,6 @@ const Customize = () => {
     <>
       <Cutomizehedder/>
       <Outlet/>
-  
-      
-      {/* Our top pics for you */}
-      
     </>
   )
 }

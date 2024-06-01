@@ -3,11 +3,11 @@ import Nav from './Nav'
 import { Outlet } from 'react-router-dom'
 import "../css/home.css"
 import Landing from './Landing'
-const Home = ({count}) => {
+const Home = ({count,countwish}) => {
   return (
     <div className='home'>
      
-      <Nav count={count}/>
+      <Nav count={count} countwish={countwish}/>
       
     <Outlet/>
 

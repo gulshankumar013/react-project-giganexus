@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import "../css/cart.css"
+import { Link } from 'react-router-dom'
 
 
 const Cart = ({cart,setCart}) => {
@@ -58,7 +59,7 @@ const removeFromCart = (index) => {
                         }
                     </div>
                     <div className="cart-payment">
-                        <button className='cart-payment-button'>Make Payment</button>
+                        <Link to={"/payment"}><button className='cart-payment-button'>Make Payment</button></Link>
                     </div>
                 </div>
             </div>

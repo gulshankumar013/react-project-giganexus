@@ -7,7 +7,7 @@ import { PiUser } from 'react-icons/pi';
 
 
 
-const Nav = ({count} ) => {
+const Nav = ({count,countwish} ) => {
   return (
     <>
      <section className='nav-section'>
@@ -28,7 +28,7 @@ const Nav = ({count} ) => {
                 <div className='nav-icon'>
                     <NavLink to={'/cart'}className={(e)=>{return e.isActive?"blue":" "}}><IoCartOutline className='nav-icons'/> <sup>{count} </sup></NavLink>
                     <NavLink to={'/profile'}><PiUser className='nav-icons'/></NavLink>
-                   <NavLink to={'/wishlist'}><IoIosHeartEmpty className='nav-icons'/></NavLink>
+                   <NavLink to={'/wishlist'}><IoIosHeartEmpty className='nav-icons'/><sup>{countwish} </sup></NavLink>
                 </div>
         </nav>
         
