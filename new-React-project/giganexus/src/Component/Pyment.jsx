@@ -13,6 +13,8 @@ const Payment = () => {
   };
 
   return (
+    <>
+    <div className='payment-body'>
     <div className="payment-container">
       <h1><i className="fas fa-credit-card"></i> Payment Details</h1>
       <form onSubmit={handleSubmit} className="payment-form">
@@ -74,6 +76,8 @@ const Payment = () => {
         <button type="submit" className="submit-btn"><i className="fas fa-check-circle"></i> Pay Now</button>
       </form>
     </div>
+    </div>
+    </>
   );
 };
 

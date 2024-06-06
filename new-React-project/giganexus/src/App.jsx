@@ -23,11 +23,6 @@ import GamingConsol from './Component/GamingConsol';
 import Payment from './Component/Pyment';
 
 
-
-
-
-
-
 const App = () => {
 
   const [product, setProduct] = useState([
@@ -245,7 +240,7 @@ const App = () => {
         },
         {
             path:'/categories/gaming_controller',
-            element:<Gaming/>
+            element:<Gaming />
         },
         {
           path: '/categories/workstation_monitor',

@@ -25,7 +25,7 @@ const Signup = () => {
                      <input  className='sign-input' type="password" id="password" name="password" placeholder='Password' required/>
                     <input  className='sign-input' type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" placeholder='Mobile ' required/>
                      <input className='sign-input' type="text" id="state" name="state" placeholder='State'required/>
-                    <input className='sign-input' type="text" id="country" name="country" placeholder='Country' required/>
+                    <input className='sign-input' type="text" id="pincode" name="pincode" placeholder='Pin' required/>
                     <input className='sign-btn' type="submit" value="Create"/>
                     <h4>or</h4>
             </div>

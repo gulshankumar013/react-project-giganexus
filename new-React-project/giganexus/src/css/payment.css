@@ -3,6 +3,11 @@ body {
   font-family: 'Arial', sans-serif;
   background-color: #f0f2f5;
 }
+.payment-body{
+  height: 96%;
+  width: 96%;
+  border: 1px solid black;
+}
 
 .payment-container {
   width: 100%;
