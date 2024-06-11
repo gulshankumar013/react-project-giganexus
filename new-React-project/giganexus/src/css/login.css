@@ -196,3 +196,80 @@ transition: 0.3s;
 .download:hover{
 	filter: invert(100%);
 }
+
+
+ /* Add to your login.css file */
+
+.login-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    animation: popupAnimation 0.3s ease-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  .login-popup.success {
+    border-left: 10px solid #4caf50; /* Green for success */
+  }
+  
+  .login-popup.error {
+    border-left: 10px solid #f44336; /* Red for error */
+  }
+  
+  .login-popup-content {
+    position: relative;
+    width: 100%;
+  }
+  
+  .login-popup-content .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #aaa;
+  }
+  
+  .login-popup-content .close:hover {
+    color: #000;
+  }
+  
+  .login-popup-content p {
+    font-size: 18px;
+    margin: 0;
+  }
+  
+  .login-popup-content .icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+  
+  @keyframes popupAnimation {
+    from {
+      transform: translate(-50%, -50%) scale(0.5);
+      opacity: 0;
+    }
+    to {
+      transform: translate(-50%, -50%) scale(1);
+      opacity: 1;
+    }
+  }
+  
+  /* Add some padding and margin to the main container */
+  /* .login-page {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 800px;
+  } */
+  

@@ -1,6 +1,6 @@
 import React from 'react'
 import '../css/categories.css'
-// import bgvideo from '../assests/video2.mp4'
+import bgvideo from '../assests/video2.mp4'
 import Footer from "./Footer";
 import { Link, Outlet } from 'react-router-dom';
 
@@ -8,7 +8,7 @@ const Categories = () => {
   return (
     <>
     <div className='categories'>
-      {/* <video src={bgvideo} autoPlay loop muted playsInline className='background-clip'/> */}
+      <video src={bgvideo} autoPlay loop muted playsInline className='background-clip'/>
 
       <div className='text1'><h1>LET'S BRING YOUR ENEMY AT YOUR HOME </h1></div>
       <div className='text2'><h1>BY SELECTING YOUR TECH ASSESTS</h1></div>
