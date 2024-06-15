@@ -31,22 +31,25 @@
     justify-content: center;
 } 
 .login-form h2{
-    text-decoration: underline;
+    margin-left: 20%;
+    margin-top:4%;
     font-family:sans-serif;
     color: #4B4B4B;
     width: 200px;
     /* border: 1px solid black; */
     font-size: large;
     font-weight: 350;
+    
 } 
 .appslogan{
+  margin-left: 4%;
     /* border: 1px solid black; */
     font-family: "Rubik";
     font-weight: 300;
 } 
 
  .login-logo-slogan{
-    margin-top: 8%;
+    margin-top: 6%;
     margin-right: 10%;
     width: 380px;
     height: 350px;
@@ -57,19 +60,29 @@
     flex-wrap: wrap;
 } 
  .login-form{
-    margin-left: 70px;
-    width: 150px;
-    height: 250px;
+  /* border: 1px solid black; */
+    margin-left: 15px;
+    width: 300px;
+    height: 290px;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
+    
    
 } 
+.login-form h4{
+ width: 100%;
+ /* border: 1px solid black; */
+ display: flex;
+ justify-content: center;
+}
  .login-input{
+  padding: 10px;
+  width: 100%;
    border: none;
     border-radius: 5px;
-    font-size: 25px;
+    font-size: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -83,8 +96,9 @@
     font-size: medium;
 } 
 .login-btn{
-width: 70%;
-padding: 7%;
+  margin-top: 2%;
+width: 47%;
+padding: 4%;
 border-radius: 0.6em;
 border: none;
 background-image: linear-gradient( to left,#6FB1FC,#4364F7,#0052D4);
@@ -98,6 +112,7 @@ transition: 0.3s;
     transform: scale(1.1);
 }
 .acc-btn{
+
     width: 12em;
     padding: 7%;
     border-radius: 0.6em;

@@ -1,6 +1,6 @@
 .footer-section{
     height: 50%;
-    width:99.99%;
+    
     /* border: 1px solid black; */
 }
 .fotter-img{
@@ -131,7 +131,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color:lightskyblue;
+    background: none;
     border-radius: 10%;
 
 }

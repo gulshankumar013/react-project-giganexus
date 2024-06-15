@@ -1,6 +1,7 @@
 import React from 'react'
 import '../css/customize3.css'
 import { FaIndianRupeeSign } from 'react-icons/fa6'
+import Footer from './Footer'
 const Customize3 = () => {
   return (
     <>
@@ -63,6 +64,7 @@ const Customize3 = () => {
                 </div>
 
       </div>
+      <Footer/>
     </>
   )
 }

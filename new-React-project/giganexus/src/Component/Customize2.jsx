@@ -14,6 +14,7 @@ import { LiaKeyboard } from "react-icons/lia";
 import { LuMonitor } from "react-icons/lu";
 import { LuHardDrive } from "react-icons/lu";
 import { MdOutlineSurroundSound } from "react-icons/md";
+import Footer from './Footer';
 
 
 const Customize2 = () => {
@@ -123,6 +124,7 @@ const Customize2 = () => {
         </div>
 
     </div>
+    <Footer/>
     </>
   )
 }

@@ -3,7 +3,14 @@ import "../css/footer.css"
 import { FaFacebook, FaTwitter } from 'react-icons/fa'
 import { FiInstagram } from 'react-icons/fi'
 import { AiFillLike } from 'react-icons/ai'
+import { Link } from 'react-router-dom'
+
+
 const Footer = () => {
+
+    const backToTop = ()=> {
+        window.scroll({top:0, left:0, behavior:'smooth'})
+      }
   return (
     <>
        <section className='footer-section'>
@@ -14,46 +21,44 @@ const Footer = () => {
                         <div className='footer-about'>
                             <ul>
                                 <li style={{fontWeight:"bold"}}>About</li><br />
-                                <a href="">About us</a><br/>
-                                <a href="">Our Story</a><br />
-                                <a href="">Our Products</a><br />
-                                <a href="">Partners</a><br />
+                                <Link to={"/about"} onClick={backToTop}>About us</Link><br/>
+                                <Link>Our Story</Link><br />
+                                <Link to={"/customize"} onClick={backToTop}>Customize</Link><br />
+                                <br />
                             </ul>
                         </div>
                         <div className='footer-about'>
                             <ul>
                                 <li style={{fontWeight:"bold"}}>Help</li><br />
-                                <a href="">My Account</a><br />
-                                <a href="">FAQ</a><br />
-                                <a href="">Pyments</a><br />
-                                <a href="">Oder's</a><br />
+                                <Link to={'/profile'} onClick={backToTop}>My Account</Link><br />
+                                <Link>FAQ</Link><br />
+                                
+                                <Link>Oder's</Link><br />
                             </ul>
                         </div>
                         <div className='footer-about'>
                             <ul>
                                 <li style={{fontWeight:"bold"}}>News</li><br />
-                                <a href="">Upcoming</a><br />
-                                <a href="">Tech News</a><br />
-                                <a href="">Trending</a><br />
-                                <a href="">Market Place</a><br />
+                                <Link to={'customize/hedder/customize3'} onClick={backToTop}>Upcoming</Link><br />
+                                <Link to={'/'} onClick={backToTop}>Trending</Link><br />
+                                <Link>Market Place</Link><br />
                             </ul>
                         </div>
                         <div className='footer-about'>
                             <ul>
                                 <li style={{fontWeight:"bold"}}>Order</li><br />
-                                <a href="">Gamming pc</a><br />
-                                <a href="">Our Story</a><br />
-                                <a href="">Our Products</a><br />
-                                <a href="">Partners</a><br />
+                                <Link to={"/customize/hedder/customize1"} onClick={backToTop}>Gamming pc</Link><br />
+                                <Link to={'/'} onClick={backToTop}>Our Products</Link><br />
+                                <Link>Partners</Link><br />
                             </ul>
                         </div>
                         <div className='footer-about'>
                             <ul>
                                 <li style={{fontWeight:"bold"}}>Support</li><br />
-                                <a href="">Contact us</a><br />
-                                <a href="">Tech Guidence</a><br />
-                                <a href="">Track my Oders</a><br />
-                                <a href="">Term & Conditions</a><br />
+                                <Link to={"/contactus"} onClick={backToTop}>Contact us</Link><br />
+                                <Link>Tech Guidence</Link><br />
+                                
+                                <Link>Term & Conditions</Link><br />
                             </ul>
                         </div>
                             <div className='footer-logodiv'>

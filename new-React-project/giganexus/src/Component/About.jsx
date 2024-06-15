@@ -32,12 +32,13 @@ const About = () => {
             </div>
             <div className='about-parent3-child2'></div>
         </div>
+        </div>
 
         <div className='about-parent4'>
             <div className='about-parent4-child1'>  
             </div>
             <div className='about-parent4-child2'>
-                <h3>Market Research</h3><br />
+                <h3>MARKET RESEARCH</h3><br />
                 <h1>THE CLAIM</h1><br />
                 <br />
                 <p>Gaming Industry is one of the booming industry of India’s growing economy.
@@ -45,9 +46,12 @@ const About = () => {
                 India’s gaming market which stood $2.6 billion in 2022, it will be worth $8.6 billion by 2027 as it is expected to grow at a Compoud Annual Rate (CAR) of 27%. Due to its emerging economy and resilient supply chains, it is high time to prioritise and tap onto the emerging market force to stay ahead in the game.</p>
             </div>
         </div>
+        
+       
+        
 
           {/* 2nd about scroll screen   */}
-          <div className='about-page2'>
+           <div className='about-page2'>
               <div className='about-page2-parent'>
                     <div className='about-page2-child1'>
                     <p>India Gaming Sector Timeline</p>
@@ -102,6 +106,7 @@ const About = () => {
                                               <div className='cb-b'><p>Access to affordable data encouraged gamers to explore, download and play more games on their mobile phone</p></div>
                                               <div className='cb-b'><p>COVID-19 lockdowns & social distancing encouraged the growth of users exploring social & multiplayer games including RMG</p></div>
                                         </div>
+                                        
                                           
                                 </div>
                                 
@@ -116,7 +121,7 @@ const About = () => {
                         </div>
               </div>
                   
-          </div>
+          </div> 
           {/* 3rd about scroll screen */}
           <div className='about-page3'>
                 <div className='about-page3-parent'>
@@ -146,7 +151,7 @@ const About = () => {
                               <div className='about-page5-child3-a'><h1>45+ years old</h1><br /><p>10% of this age group constitute to gaming</p></div>
                       </div>
                 </div>
-    </div>
+    
     <Footer/>
     </>
     

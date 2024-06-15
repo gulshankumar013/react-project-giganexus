@@ -21,6 +21,11 @@ import GamingKeyboard from './Component/GamingKeyboard';
 import GamingMouse from './Component/GamingMouse';
 import GamingConsol from './Component/GamingConsol';
 import Payment from './Component/Pyment';
+import ContactUs from './Component/ContactUs';
+import DashMain from './Dashbord/DashMain';
+import AdminLoginPage from './Dashbord/AdminLoginPage';
+
+
 
 
 const App = () => {
@@ -286,17 +291,30 @@ const App = () => {
         {
           path:"/payment",
           element:<Payment/>
-        }
+        },
+        {
+          path:"/contactus",
+          element:<ContactUs/>
+        },
+       
 
       ]
     },
+    {
+      path:"/adminLogin",
+      element:<AdminLoginPage/>
+    },
 
-    
+    {
+      path:"/dasbord",
+      element:<DashMain/>
+    } 
 
   ])
   return (
     <>
     <RouterProvider router={router}/>
+    
     
     </>
   )
