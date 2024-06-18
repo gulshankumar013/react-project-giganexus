@@ -24,6 +24,16 @@ import Payment from './Component/Pyment';
 import ContactUs from './Component/ContactUs';
 import DashMain from './Dashbord/DashMain';
 import AdminLoginPage from './Dashbord/AdminLoginPage';
+import AddProduct from './Dashbord/AddHomeProduct';
+import DashbordHome from './Dashbord/DashbordHome';
+import AddCoustomizeProduct from './Dashbord/AddCoustomizeProduct';
+import AddProductCategories from './Dashbord/AddProductCategories';
+import AddGamingController from './Dashbord/AddGamingController';
+import AddGamingKeybord from './Dashbord/AddGamingKeybord';
+import AddgammingMouse from './Dashbord/AddgammingMouse';
+import AddWorkstation from './Dashbord/AddWorkstation';
+import AddVr from './Dashbord/AddVr';
+import AddGamingConsole from './Dashbord/AddGamingConsole';
 
 
 
@@ -294,7 +304,8 @@ const App = () => {
         },
         {
           path:"/contactus",
-          element:<ContactUs/>
+          element:<ContactUs/>,
+          
         },
        
 
@@ -307,7 +318,51 @@ const App = () => {
 
     {
       path:"/dasbord",
-      element:<DashMain/>
+      element:<DashMain/>,
+      children:[
+        {
+          path:"/dasbord/addproduct",
+          element:<AddProduct/>
+        },
+        {
+          path:"/dasbord/addproductCoustomize",
+          element:<AddCoustomizeProduct/>
+        },
+        {
+          path:"/dasbord/addproductCategories",
+          element:<AddProductCategories/>
+        },
+        {
+          path:"/dasbord/dashbordHome",
+          element:<DashbordHome/>
+        },
+        {
+          path:"/dasbord/addGammingControllers",
+          element:<AddGamingController/>
+        },
+       {
+        path:"/dasbord/addGammingKeybord",
+        element:<AddGamingKeybord/>
+       },
+       {
+        path:"/dasbord/addGamingMouse",
+        element:<AddgammingMouse/>
+       },
+       {
+        path:"/dasbord/addWorkstation",
+        element:<AddWorkstation/>
+       },
+       {
+        path:"/dasbord/addVr",
+        element:<AddVr/>
+       },
+       {
+        path:"/dasbord/gamingConsole",
+        element:<AddGamingConsole/>
+       }
+      
+
+      ]
     } 
 
   ])
