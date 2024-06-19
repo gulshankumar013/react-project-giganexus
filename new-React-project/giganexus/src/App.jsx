@@ -34,6 +34,10 @@ import AddgammingMouse from './Dashbord/AddgammingMouse';
 import AddWorkstation from './Dashbord/AddWorkstation';
 import AddVr from './Dashbord/AddVr';
 import AddGamingConsole from './Dashbord/AddGamingConsole';
+import ContactusMessage from './Dashbord/ContactusMessage';
+import UserDetails from './Dashbord/UserDetails';
+import AdminSignup from './Dashbord/AdminSignup';
+import AdminDetails from './Dashbord/AdminDetails';
 
 
 
@@ -315,6 +319,10 @@ const App = () => {
       path:"/adminLogin",
       element:<AdminLoginPage/>
     },
+    {
+      path:"/adminSignup",
+      element:<AdminSignup/>
+    },
 
     {
       path:"/dasbord",
@@ -327,6 +335,18 @@ const App = () => {
         {
           path:"/dasbord/addproductCoustomize",
           element:<AddCoustomizeProduct/>
+        },
+        {
+          path:"/dasbord/message",
+          element:<ContactusMessage/>
+        },
+        {
+          path:"/dasbord/userDetails",
+          element:<UserDetails/>
+        },
+        {
+          path:"/dasbord/adminDetails",
+          element:<AdminDetails/>
         },
         {
           path:"/dasbord/addproductCategories",

@@ -132,6 +132,27 @@ const DasMain = () => {
             </Link>
           </li>
 
+          <li className={activeMenu === "message" ? "active" : ""}>
+            <Link to="/dasbord/message" onClick={() => setActiveMenu("message")}>
+             
+              <span className="text">Message</span>
+            </Link>
+          </li>
+
+          <li className={activeMenu === "UserDetails" ? "active" : ""}>
+            <Link to="/dasbord/userDetails" onClick={() => setActiveMenu("userDeatils")}>
+             
+              <span className="text">User Details</span>
+            </Link>
+          </li>
+
+          <li className={activeMenu === "AdminDetails" ? "active" : ""}>
+            <Link to="/dasbord/adminDetails" onClick={() => setActiveMenu("AdminDetails")}>
+             
+              <span className="text">Admin Details</span>
+            </Link>
+          </li>
+
           
             <li>
             <div className='dropdown' onMouseEnter={handleDropdownToggle} onMouseLeave={handleDropdownToggle}>
@@ -203,7 +224,7 @@ const DasMain = () => {
                   <BsChevronRight />
                 </li>
                 <li>
-                  <Link to="#" className="active">
+                  <Link to="/dasbord/dashbordHome" className="active">
                     Home
                   </Link>
                 </li>

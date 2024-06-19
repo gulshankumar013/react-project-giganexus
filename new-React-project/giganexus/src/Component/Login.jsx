@@ -31,7 +31,7 @@ const Login = () => {
     };
     console.log(payload ,"payload")
     try {
-      const response = await axios.post('http://localhost:5164/adminSignin', payload);
+      const response = await axios.post('http://localhost:5164/signin', payload);
       console.log(response,'response api')
       if (response.data.rData.rMessage=="Signin Successful") {
         setPopupMessage('Login successful!');

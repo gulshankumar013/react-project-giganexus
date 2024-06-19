@@ -53,7 +53,7 @@ const ContactUs = () => {
        
         <div className="contactus-form">
             <h1>Contact us</h1>
-            <form  action='#' method='post' onSubmit={handleSubmit}   classNameName='contact-input'>
+            <form  action='#' method='post' onSubmit={handleSubmit}   className='contact-input'>
                 <div className="contactus-input-container">
                     <span className="input-icon"><FaUser /></span>
                     <input type="text" name="name" placeholder="Name" value={formData.name} onChange={handleChange} required/>
